@@ -1,23 +1,79 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+  const data = [
+    {
+      nama: "Danu Tryas Pristowo",
+      link: "https://injectme.vercel.app/",
+      github: "https://github.com/danutryas/INJECTme",
+      figma: "https://www.figma.com/file/m8RSwB8h6MT250KEcWTulA/INJECT.me?node-id=19%3A103",
+      juara: '1',
+    },
+    {
+      nama: "Hanif Abyan Ayyasyi",
+      link: "",
+      github: "https://github.com/Ayyasythz/tugas-cci",
+      figma: "",
+      juara: '2',
+    },
+    {
+      nama: "USTAMI RAJIB",
+      link: "https://giant-friends.surge.sh",
+      github: "https://github.com/ustamirazib/tugas1cci",
+      figma: "https://www.figma.com/file/KOz01fFVXpa7ISmlW1bVnv/Project%2Bcci?node-id=0%3A1",
+      juara: '3',
+    },
+    {
+      nama: "Mohammad Daffa Setiawan",
+      link: "https://warlock0401.github.io/Tugas-CCI/",
+      github: "https://github.com/warlock0401/Tugas-CCI",
+      figma: "https://www.figma.com/file/LFpqgAvDJQrvluppg4GgY8/CCI?node-id=0%3A1",
+      juara: '',
+    },
+  ]
+
+  const list = [];
+
+  data.forEach(data => {
+    list.push(<div className={`${data.juara === '1' ? "bg-yellow-300" : ''} ${data.juara === '2' ? "bg-gray-300" : ''} ${data.juara === '3' ? "bg-yellow-600" : ''} items-center border border-1 border-black p-4 mx-4 rounded text-black flex transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300`}>
+      <div className='w-5/6'>
+        <h2 className="font-bold">{data.nama}</h2>
+        <p className="space-x-2">
+        { data.link !== "" &&
+          <a className="hover:underline" href={data.link}>Website</a> 
+        }
+        { data.github !== "" &&
+          <a className="hover:underline" href={data.github}>Github</a>
+        }
+        { data.figma !== "" &&
+          <a className="hover:underline" href={data.figma}>Figma</a>
+        } 
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+      <div className="w-1/6">
+      { data.juara !== "" &&
+        <p className="font-bold text-4xl">#{data.juara}</p>
+      }
+      </div>
+    </div>)
+  })
+
+  return (
+    <div>
+      <div className=" h-screen text-black font-poppins">
+        <div className="flex">
+          <div className="w-full lg:w-2/6 m-auto bg-white h-screen pt-10">
+            <h1 className="font-bold text-xl text-black text-center">🏆 Karya Terbaik 🏆</h1>
+            <h1 className="font-light text-sm text-black text-center ">Tugas Webdev CCI</h1>
+            <div className="grid grid-cols-1 gap-4 pt-10">
+              {
+                list
+              }
+                        
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
