@@ -30,6 +30,62 @@ function App() {
       figma: "https://www.figma.com/file/LFpqgAvDJQrvluppg4GgY8/CCI?node-id=0%3A1",
       juara: '',
     },
+    {
+      nama: "Ardhian Rizky Ayatollah Nur Ismail",
+      link: "",
+      github: "https://github.com/deruuz/Website-sederhana.git",
+      figma: "",
+      juara: '',
+    },
+    {
+      nama: "Jannatin Nurrohmah",
+      link: "",
+      github: "https://github.com/Jannatin12/derm-health-web",
+      figma: "",
+      juara: '',
+    },
+    {
+      nama: "Muhammad Zaky Fathurahim",
+      link: "",
+      github: "https://github.com/Zaky-ya/health-care-website.git",
+      figma: "",
+      juara: '',
+    },
+    {
+      nama: "Jeremya Pascal",
+      link: "",
+      github: "https://github.com/Jeremyapass/CCI-Webdev-Task1.git",
+      figma: "",
+      juara: '',
+    },
+    {
+      nama: "Andreas Wahyu Prayogo",
+      link: "",
+      github: "https://github.com/andreewp/Web-sederhana.git",
+      figma: "",
+      juara: '',
+    },
+    {
+      nama: "Muhammad Rafi Ediananta",
+      link: "",
+      github: "https://github.com/edianantarafi/Rafi_Landing-Page-Kesehatan.git",
+      figma: "https://www.figma.com/file/NcsxeATlGQdqPJSZBmj2BF/Medical-Start-page-(Community)?node-id=0%3A1",
+      juara: '',
+    },
+    {
+      nama: "Juventius Kriswijanarko",
+      link: "",
+      github: "https://github.com/Juventius/Tugas-1-CCI",
+      figma: "",
+      juara: '',
+    },
+    {
+      nama: "Radiana De Salma",
+      link: "",
+      github: "https://github.com/radianade/tugas1-cci-kesehatan.git",
+      figma: "https://www.figma.com/file/2uTgVCgc61yJUesO4DXBTk/CCI_1?node-id=0%3A1",
+      juara: '',
+    },
   ]
 
   const list = [];
